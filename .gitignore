@@ -1,0 +1,16 @@
+exproof
+
+.deps
+.dirstamp
+.libs
+.DS_Store
+.*.swp
+*.*~*
+*.bak
+*.rej
+*.orig
+*.pyc
+*.o
+*.o-*
+*.a
+*.log
