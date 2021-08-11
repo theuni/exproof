@@ -48,6 +48,7 @@ struct Registers
 
     std::array<uint64_t, 2> m_gen{0};
     uint64_t m_pc{0};
+    std::array<std::byte, 32> m_hash{};
 };
 
 class Program
@@ -57,6 +58,7 @@ public:
     Registers Run();
 private:
     Instruction Fetch() const;
+    void UpdateHash();
     void Add(const operand& a, const operand& b);
     void Sub(const operand& a, const operand& b);
 
